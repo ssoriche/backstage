@@ -1,5 +1,11 @@
 name: Build and push Docker image
 on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+  push: ~
+
   workflow_dispatch:
 
   repository_dispatch:
